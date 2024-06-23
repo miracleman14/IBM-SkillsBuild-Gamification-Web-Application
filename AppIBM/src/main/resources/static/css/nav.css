@@ -1,0 +1,159 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem;
+}
+
+.dropdown {
+  position: fixed;
+  top: 0.5rem;
+}
+
+#accountDropdown {
+  right: 0.5rem;
+}
+
+#adminDropdown {
+  left: 0.5rem;
+}
+
+.dropdown a {
+  background-color: #1f70c1;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+#adminDropdown > a {
+  padding: 0.5rem 0.5rem;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  border: 0.0625rem solid #8d8d8d;
+  border-radius: 0.25rem;
+}
+
+.dropdown:hover > a {
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.dropdown a:hover {
+  background-color: rgb(12, 90, 169);
+}
+
+.dropdown > a, .dropdown-content a {
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 10rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  animation: fadeIn 0.5s ease-in-out;
+  border: 0.0625rem solid #8d8d8d;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+#adminDropdown .dropdown-content {
+  left: 0;
+  right: auto;
+}
+
+.dropdown-content a {
+  padding: 0.75rem 1rem;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#navbar {
+  width: 100%;
+  border-top: 0.0625rem solid #8d8d8d;
+  border-bottom: 0.0625rem solid #8d8d8d;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#navbar li {
+  float: left;
+}
+
+#navbar li a {
+  display: block;
+  text-align: center;
+  padding: 0.875rem 1rem;
+  color: #111;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Change the link color on navbar hover if it is not the active page */
+#navbar li a:not(.active):hover {
+  background-color: rgba(201, 201, 201, 0.5);
+}
+
+#navbar li a:not(.active) {
+  transition: background-color 0.3s ease;
+}
+
+/* Active page on navbar */
+#navbar li a.active {
+  background-color: #1f70c1;
+  color: white;
+}
+
+/* Avatar styles */
+.nav-avatar img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.nav-avatar img:hover {
+  transform: scale(1.1);
+}
+
+/* Focus styles */
+.nav-avatar img:focus {
+  outline: 2px solid #1f70c1;
+}
+
+

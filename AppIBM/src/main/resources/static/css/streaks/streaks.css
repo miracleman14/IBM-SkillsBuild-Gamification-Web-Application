@@ -1,0 +1,150 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Reset default styles and set global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; /* Use Poppins font for all elements */
+}
+
+/* Styles for the body */
+body {
+  display: flex;
+  flex-direction: column; /* Change to column layout */
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #9B59B6; /* Set background color */
+}
+
+/* Wrapper for the main content */
+.wrapper {
+  width: 750px; /* Set width of the wrapper */
+  background: #fff; /* Set background color */
+  border-radius: 10px; /* Add border radius */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12); /* Add box shadow */
+}
+
+/* Styles for the header */
+.wrapper header {
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px; /* Set padding */
+  justify-content: space-between;
+}
+
+/* Styles for the icons in the header */
+header .icons {
+  display: flex;
+}
+
+header .icons span {
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787; /* Set icon color */
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%; /* Add border radius */
+}
+
+.icons span:last-child {
+  margin-right: -10px; /* Adjust margin */
+}
+
+header .icons span:hover {
+  background: #f2f2f2; /* Change background color on hover */
+}
+
+/* Styles for the streak element */
+.user-streak {
+  font-size: 1.45rem; /* Set font size */
+  font-weight: 500; /* Set font weight */
+}
+
+/* Add CSS class for highlighting past streak days */
+.streak {
+  background-color: #ffc107; /* Change color as desired */
+  color: #000; /* Change color as desired */
+}
+
+
+/* Styles for the calendar */
+.calendar {
+  padding: 20px; /* Set padding */
+  margin-top: 20px; /* Adjust margin top */
+}
+
+.calendar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+
+/* Styles for the days of the week */
+.calendar .days {
+  margin-bottom: 20px; /* Set margin */
+}
+
+.calendar li {
+  color: #333; /* Set color */
+  width: calc(100% / 7); /* Calculate width based on number of days */
+  font-size: 1.07rem; /* Set font size */
+}
+
+.calendar .weeks li {
+  font-weight: 500; /* Set font weight */
+  cursor: default; /* Set cursor */
+}
+
+.calendar .days li {
+  z-index: 1;
+  cursor: pointer; /* Set cursor */
+  position: relative;
+  margin-top: 30px; /* Set margin */
+}
+
+.days li.inactive {
+  color: #aaa; /* Set color for inactive days */
+}
+
+.days li.active {
+  color: #fff; /* Set color for active days */
+}
+
+.days li::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%); /* Center the pseudo-element */
+}
+
+.days li.active::before {
+  background: #9B59B6; /* Set background color for active days */
+}
+
+.days li:not(.active):hover::before {
+  background: #f2f2f2; /* Change background color on hover for inactive days */
+}
+
+.streak-message {
+  text-align: center;
+  margin-bottom: 20px; /* Adjust margin bottom as needed */
+}
+
+.streak-message h2 {
+  font-size: 1.8rem; /* Adjust font size as needed */
+  font-weight: 600; /* Adjust font weight as needed */
+  color: #333; /* Adjust color as needed */
+}

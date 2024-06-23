@@ -1,0 +1,43 @@
+/* Use the following code in <head> of your JSP to link the CSS file to the page:
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}css/global.css">
+*/
+
+* { /* DO NOT CHANGE THIS */
+  box-sizing: border-box;
+}
+
+html { /* DO NOT CHANGE THIS */
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 16px; /* 1rem = 16px */
+}
+
+body { /* DO NOT CHANGE THIS */
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.96);
+}
+
+.container { /* DO NOT CHANGE THIS */
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { /* DO NOT CHANGE THIS */
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track { /* DO NOT CHANGE THIS */
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb { /* DO NOT CHANGE THIS */
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover { /* DO NOT CHANGE THIS */
+  background: #555;
+}

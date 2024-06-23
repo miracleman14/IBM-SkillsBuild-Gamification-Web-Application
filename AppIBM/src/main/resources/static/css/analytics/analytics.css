@@ -1,0 +1,34 @@
+.container-fluid {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.form-group {
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+#search {
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+#searchButton {
+  background-color: #1f70c1;
+}
+
+#searchButton:hover {
+  background-color: rgb(12, 90, 169);
+}
+
+#filter {
+  margin-top: 0.25rem;
+}
+
+h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  margin: 0.25rem auto;
+}

@@ -1,0 +1,110 @@
+/* Use IBM Plex Sans as the font */
+body {
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3f3; /* Light gray background */
+}
+
+/* Adjust container layout */
+.container {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  padding: 100px 20px; /* Add more top padding to move everything down */
+}
+
+/* Style the avatar container */
+#avatarCanvas {
+  flex: 0 0 35%;
+  margin-right: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px; /* Increase border radius for smoother edges */
+  background-color: #fff; /* White background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+/* Style the options section */
+.options {
+  flex: 1 1 auto;
+  max-width: 40%;
+  background-color: #fff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+  padding: 20px; /* Add padding */
+}
+
+/* Style the labels */
+.options label {
+  display: block;
+  margin-bottom: 12px; /* Adjust margin for better spacing */
+  font-weight: bold;
+  color: #333; /* Dark gray color */
+}
+
+/* Style the select inputs and buttons */
+.options select, .options button {
+  width: 100%;
+  margin-bottom: 16px; /* Adjust margin for better spacing */
+  padding: 14px; /* Increase padding for better visual appeal */
+  border: none; /* Remove border */
+  border-radius: 5px;
+  font-size: 16px; /* Increase font size for better readability */
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Add transition effect */
+}
+
+/* Style the select inputs and buttons on hover */
+.options select:hover, .options button:hover {
+  background-color: #f0f0f0; /* Lighter background color on hover */
+  color: #1f70c1; /* IBM theme blue */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow on hover */
+}
+
+/* Style the select inputs and buttons on focus */
+.options select:focus, .options button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 0 2px #1f70c1; /* Box shadow and border color on focus */
+}
+
+/* Style the checkbox for glasses */
+.options input[type="checkbox"] {
+  margin-top: 12px; /* Adjust margin for better spacing */
+  appearance: none; /* Remove default appearance */
+  -webkit-appearance: none; /* Remove default appearance for Safari */
+  width: 20px; /* Set width of the checkbox */
+  height: 20px; /* Set height of the checkbox */
+  background-color: #fff; /* White background */
+  border: 2px solid #1f70c1; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s, border-color 0.3s; /* Add transition effect */
+}
+
+.options input[type="checkbox"]:checked {
+  background-color: #1f70c1; /* IBM theme blue when checked */
+  border-color: #1f70c1; /* Border color when checked */
+}
+
+/* Style the save button */
+.options button {
+  background-color: #1f70c1; /* IBM theme blue */
+  color: #fff; /* White text color */
+  padding: 14px 24px; /* Adjust padding for larger button */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px; /* Increase font size for better visual appeal */
+  cursor: pointer;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  border: none;
+}
+
+.options button:hover {
+  background-color: #045cc7; /* Darker blue on hover */
+}
+
+/* Adjust button appearance on click */
+.options button:active {
+  transform: translateY(1px); /* Move button down slightly on click */
+}

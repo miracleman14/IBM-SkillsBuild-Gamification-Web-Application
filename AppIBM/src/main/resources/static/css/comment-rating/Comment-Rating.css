@@ -1,0 +1,118 @@
+.comment-container {
+  position: relative;
+  width: 400px;
+  height: 200px;
+}
+
+.comment-area {
+  position: absolute;
+  top: 25px;
+  left: 75px;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  padding: 10px;
+  border: none;
+  resize: none;
+  font-family: Arial, sans-serif;
+  color: gold;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.comment-area::placeholder {
+  color: gold;
+}
+
+.rating-star {
+}
+
+.rating-image {
+  position: static;
+  width: 100px;
+  height: 100px;
+  border: none;
+  resize: none;
+}
+
+.textbox-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130%;
+  height: 120%;
+  z-index: 0;
+}
+
+.comments {
+  margin-bottom: 20px;
+  color: gold;
+}
+
+.addcomment {
+  border-radius: 12px;
+}
+
+.addcomment:hover {
+  border-color: gold;
+  border-radius: 12px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.rating {
+  color: gold;
+}
+
+.addrating {
+  border-radius: 12px;
+}
+
+.addrating:hover {
+  border-color: gold;
+  border-radius: 12px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.option {
+  padding: 6px;
+  color: gold
+}
+
+optgroup[label="A Collaboration of ISTE and IBM"] {
+  color: black;
+}
+
+optgroup[label="A Collaboration of ISTE and IBM"] option {
+  color: gold;
+}
+
+optgroup[label="AI Fundamentals"] {
+  color: black;
+}
+
+optgroup[label="AI Fundamentals"] option {
+  color: gold;
+}
+
+optgroup[label="Cloud Computing Fundamentals"] {
+  color: black;
+}
+
+optgroup[label="Cloud Computing Fundamentals"] option {
+  color: gold;
+}
+
+optgroup[label="Introduction to Cloud"] {
+  color: black;
+}
+
+optgroup[label="Introduction to Cloud"] option {
+  color: gold;
+}
+
+optgroup[label="Enterprise Design Thinking Practitioner"] {
+  color: black;
+}
+
+optgroup[label="Enterprise Design Thinking Practitioner"] option {
+  color: gold;
+}

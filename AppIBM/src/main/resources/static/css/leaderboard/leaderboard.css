@@ -1,0 +1,33 @@
+#global {
+  margin: auto;
+}
+
+#friend {
+  margin: auto;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px; /* Increased padding for better spacing */
+}
+
+.leaderBoardHead {
+  border-collapse: collapse;
+  width: 40%;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th.head {
+  background-color: #2db4dd;
+}
+
+/* Adjust profile picture size */
+.friend img {
+  width: 40px; /* Increased image width */
+  height: 40px; /* Increased image height */
+  border-radius: 50%; /* Make the image round */
+  margin-right: 15px; /* Increased spacing between the picture and the username */
+}
